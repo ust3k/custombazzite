@@ -411,7 +411,7 @@ if __name__ == "__main__":
     # Start service subcommand
     parser_start = subparsers.add_parser('start', help='Start the adaptive brightness service.')
     parser_start.add_argument('--min_brightness_level', type=int, default=400, help='The minimum brightness level to be set.')
-    parser_start.add_argument('--sensor_shift', type=int, default=-2, help='The sensor shift value to be applied. Adjust this value in small amout to shift the curve left or right.')
+    parser_start.add_argument('--sensor_shift', type=int, default=-2, help='The sensor shift value to be applied. Adjust this value in small amount to shift the curve left or right.')
     parser_start.add_argument('--sensitivity_factor', type=float, default=1.0, help='The sensitivity factor for brightness adjustment. (Use sensor shift instead)')
     parser_start.add_argument('--step', type=int, default=50, help='The step size to adjust brightness by.')
     parser_start.add_argument('--silent', action='store_true', help='Silence all logging.')
