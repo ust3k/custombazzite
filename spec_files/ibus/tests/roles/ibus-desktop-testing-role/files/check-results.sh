@@ -43,7 +43,7 @@ if [ $TEST_RUN_IN_RAWHIDE -eq 0 ] ; then
         exit 0
     fi
 fi
-if [ ! -f $TEST_LOG ] ; then
+if [ ! -f "$TEST_LOG" ] ; then
     gen_results "0" "fail"
     echo -n ERROR
 else
